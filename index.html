@@ -174,7 +174,7 @@
             </section>
             <section class="email-card">
               <div class="field-label">Email Address</div>
-              <div class="display-value">denise@example.com</div>
+              <div class="display-value">intern@gmail.com</div>
             </section>
           </div>
 
@@ -188,6 +188,7 @@
       </div>
     </div>
 
+    <!-- Confirmation modal -->
     <div class="modal-backdrop" id="leaveBackdrop" hidden>
       <section
         class="leave-modal"
@@ -210,122 +211,14 @@
               id="modalBell"
               aria-label="Sad Zedu bell mascot"
             >
-              <span class="bell-arm arm-left"></span>
-              <span class="bell-arm arm-right"></span>
-              <svg
-                class="bell-svg"
-                viewBox="0 0 120 124"
-                role="img"
-                aria-label="Purple bell with a white lightning bolt"
-              >
-                <defs>
-                  <linearGradient id="bellShade" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0" stop-color="#7775F0" />
-                    <stop offset="1" stop-color="#4A49B8" />
-                  </linearGradient>
-                </defs>
-                <path
-                  class="bell-body"
-                  d="M60 12C41 12 30 26 30 47v17c0 9-6 18-15 24-3 3-1 8 4 8h82c5 0 7-5 4-8-9-6-15-15-15-24V47C90 26 79 12 60 12Z"
-                  fill="url(#bellShade)"
-                />
-                <path
-                  d="M46 99h28c-1 10-7 14-14 14s-13-4-14-14Z"
-                  fill="#5757CD"
-                />
-                <path d="m66 28-21 32h15l-6 23 23-35H61Z" fill="#fff" />
-                <g class="face">
-                  <path
-                    class="brow brow-left"
-                    d="M38 46q7 0 14-7"
-                    fill="none"
-                    stroke="#29265C"
-                    stroke-width="3.6"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    class="brow brow-right"
-                    d="M68 39q7 7 14 7"
-                    fill="none"
-                    stroke="#29265C"
-                    stroke-width="3.6"
-                    stroke-linecap="round"
-                  />
-                  <ellipse
-                    class="eye eye-left"
-                    cx="45"
-                    cy="55"
-                    rx="6.5"
-                    ry="8"
-                    fill="#fff"
-                  />
-                  <ellipse
-                    class="eye eye-right"
-                    cx="75"
-                    cy="55"
-                    rx="6.5"
-                    ry="8"
-                    fill="#fff"
-                  />
-                  <circle
-                    class="pupil pupil-left"
-                    cx="46"
-                    cy="57"
-                    r="3"
-                    fill="#29265C"
-                  />
-                  <circle
-                    class="pupil pupil-right"
-                    cx="76"
-                    cy="57"
-                    r="3"
-                    fill="#29265C"
-                  />
-                  <circle cx="47" cy="55" r="1.3" fill="#fff" />
-                  <circle cx="77" cy="55" r="1.3" fill="#fff" />
-                  <ellipse
-                    class="cheek cheek-left"
-                    cx="34"
-                    cy="65"
-                    rx="5.5"
-                    ry="3"
-                    fill="#F7A4BD"
-                    opacity=".85"
-                  />
-                  <ellipse
-                    class="cheek cheek-right"
-                    cx="86"
-                    cy="65"
-                    rx="5.5"
-                    ry="3"
-                    fill="#F7A4BD"
-                    opacity=".85"
-                  />
-                  <path
-                    class="mouth"
-                    d="M53 75 Q60 67 67 75"
-                    fill="none"
-                    stroke="#29265C"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    class="tear tear-left"
-                    d="M35 61q-5 7 0 10 5-3 0-10Z"
-                    fill="#8DE2FF"
-                    opacity="0"
-                  />
-                  <path
-                    class="tear tear-right"
-                    d="M85 61q-5 7 0 10 5-3 0-10Z"
-                    fill="#8DE2FF"
-                    opacity="0"
-                  />
-                </g>
-              </svg>
+              <img
+                class="bell-image sad-bell-image"
+                src="sad-bellmoji.png"
+                alt=""
+              />
             </div>
             <div class="bell-caption" id="bellCaption">
-              Wait… don't go just yet? 🥺
+              A tiny bell with big feelings.
             </div>
           </div>
           <p class="confirmation-copy" id="modalDescription">
@@ -351,6 +244,7 @@
       </section>
     </div>
 
+    <!-- Centred happy Bellmoji celebration -->
     <div class="celebration" id="celebration" aria-live="polite" hidden>
       <div class="celebration-card">
         <div
@@ -358,61 +252,11 @@
           id="happyBell"
           aria-hidden="true"
         >
-          <span class="bell-arm arm-left"></span>
-          <span class="bell-arm arm-right"></span>
-          <svg class="bell-svg" viewBox="0 0 120 124">
-            <path
-              class="bell-body"
-              d="M60 12C41 12 30 26 30 47v17c0 9-6 18-15 24-3 3-1 8 4 8h82c5 0 7-5 4-8-9-6-15-15-15-24V47C90 26 79 12 60 12Z"
-              fill="#5757CD"
-            />
-            <path d="M46 99h28c-1 10-7 14-14 14s-13-4-14-14Z" fill="#4544A8" />
-            <path d="m66 28-21 32h15l-6 23 23-35H61Z" fill="#fff" />
-            <g class="face">
-              <path
-                class="brow brow-left"
-                d="M38 48q7-7 14-1"
-                fill="none"
-                stroke="#29265C"
-                stroke-width="3.6"
-                stroke-linecap="round"
-              />
-              <path
-                class="brow brow-right"
-                d="M68 47q7-6 14 1"
-                fill="none"
-                stroke="#29265C"
-                stroke-width="3.6"
-                stroke-linecap="round"
-              />
-              <path
-                class="eye eye-left"
-                d="M39 56q6-10 12 0"
-                fill="none"
-                stroke="#29265C"
-                stroke-width="3.8"
-                stroke-linecap="round"
-              />
-              <path
-                class="eye eye-right"
-                d="M69 56q6-10 12 0"
-                fill="none"
-                stroke="#29265C"
-                stroke-width="3.8"
-                stroke-linecap="round"
-              />
-              <circle cx="34" cy="65" r="4" fill="#F7A4BD" />
-              <circle cx="86" cy="65" r="4" fill="#F7A4BD" />
-              <path
-                class="mouth"
-                d="M51 68q9 11 18 0"
-                fill="none"
-                stroke="#29265C"
-                stroke-width="3"
-                stroke-linecap="round"
-              />
-            </g>
-          </svg>
+          <img
+            class="bell-image happy-bell-image"
+            src="happy-bellmoji.png"
+            alt=""
+          />
         </div>
         <div class="celebration-copy">
           <strong id="celebrationTitle">Phew! You're staying!</strong>
@@ -433,6 +277,7 @@
       ><span class="spark spark-three">✦</span>
     </div>
 
+    <!-- Safe demo-only confirmation after the destructive-looking action -->
     <div class="toast" id="demoToast" role="status" hidden>
       <span class="toast-icon">⚡</span>
       <span

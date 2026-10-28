@@ -33,11 +33,11 @@
   function showCelebration() {
     clearTimeout(celebrationTimer);
     celebration.hidden = false;
-    // Restart the CSS entrance and dance when the bell appears again.
+    // Restart the overlay entrance and Bellmoji animation when it appears again.
     celebration.classList.remove('replay');
     void celebration.offsetWidth;
     celebration.classList.add('replay');
-    celebrationTimer = setTimeout(hideCelebration, 4200);
+    celebrationTimer = setTimeout(hideCelebration, 2600);
   }
 
   function hideCelebration() {
