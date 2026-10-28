@@ -11,11 +11,11 @@
 
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-  const poses = {
-    walk1: "public/images/bellmoji/bell-walk-1.png",
-    walk2: "public/images/bellmoji/bell-walk-2.png",
-    sitting: "public/images/bellmoji/bell-sit.png",
-    pointing: "public/images/bellmoji/bell-point.png"
+    const poses = {
+    walk1: "/images/bellmoji/bell-walk-1.png",
+    walk2: "/images/bellmoji/bell-walk-2.png",
+    sitting: "/images/bellmoji/bell-sit.png",
+    pointing: "/images/bellmoji/bell-point.png"
   };
 
   // Preload the PNGs
